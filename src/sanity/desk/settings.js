@@ -40,59 +40,6 @@ export const settingsMenu = (S) => {
 								.documentId('settingsRedirect')
 						)
 						.icon(EnterRightIcon),
-					S.listItem()
-						.title('Videos')
-						.child(
-							S.list()
-								.title('Videos')
-								.items([
-									S.listItem()
-										.title('Landscape 1')
-										.child(
-											S.editor()
-												.id('settingsLandscape1')
-												.schemaType('settingsLandscape1')
-												.documentId('settingsLandscape1')
-										)
-										.icon(DocumentVideoIcon),
-									S.listItem()
-										.title('Landscape 2')
-										.child(
-											S.editor()
-												.id('settingsLandscape2')
-												.schemaType('settingsLandscape2')
-												.documentId('settingsLandscape2')
-										)
-										.icon(DocumentVideoIcon),
-									S.listItem()
-										.title('Organism 1')
-										.child(
-											S.editor()
-												.id('settingsOrganism1')
-												.schemaType('settingsOrganism1')
-												.documentId('settingsOrganism1')
-										)
-										.icon(DocumentVideoIcon),
-									S.listItem()
-										.title('Organism 2')
-										.child(
-											S.editor()
-												.id('settingsOrganism2')
-												.schemaType('settingsOrganism2')
-												.documentId('settingsOrganism2')
-										)
-										.icon(DocumentVideoIcon),
-									S.listItem()
-										.title('Organism 3')
-										.child(
-											S.editor()
-												.id('settingsOrganism3')
-												.schemaType('settingsOrganism3')
-												.documentId('settingsOrganism3')
-										)
-										.icon(DocumentVideoIcon),
-								])
-						),
 				])
 		)
 		.icon(CogIcon);
