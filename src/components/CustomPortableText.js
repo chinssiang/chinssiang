@@ -6,13 +6,15 @@ import Img from '@/components/Image';
 const PortableTextComponents = {
 	block: {
 		h1: ({ children }) => (
-			<h1 className="text-3xl md:text-4xl lg:text-5xl">{children}</h1>
+			<h1 className="text-3xl md:text-4xl lg:text-5xl text-balance">
+				{children}
+			</h1>
 		),
-		h2: ({ children }) => <h2 className="text-2xl">{children}</h2>,
-		h3: ({ children }) => <h3 className="text-xl">{children}</h3>,
-		h4: ({ children }) => <h4 className="text-lg">{children}</h4>,
-		h5: ({ children }) => <h5 className="text-lg">{children}</h5>,
-		h6: ({ children }) => <h6 className="text-lg">{children}</h6>,
+		h2: ({ children }) => <h2 className="text-2xl text-balance">{children}</h2>,
+		h3: ({ children }) => <h3 className="text-xl text-balance">{children}</h3>,
+		h4: ({ children }) => <h4 className="text-lg text-balance">{children}</h4>,
+		h5: ({ children }) => <h5 className="text-lg text-balance">{children}</h5>,
+		h6: ({ children }) => <h6 className="text-lg text-balance">{children}</h6>,
 	},
 	list: {
 		bullet: ({ children }) => <ul>{children}</ul>,
